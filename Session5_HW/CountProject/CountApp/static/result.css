@@ -1,0 +1,36 @@
+*{
+  margin: 0px;
+  background-color: rgb(252, 175, 201);
+  color: white;
+  font-family: 'Gaegu', cursive;
+}
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted white;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text_box{
+    border: 2px solid white;
+    height: 200px;
+    width: 400px;
+    border-radius: 10%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+   
+    

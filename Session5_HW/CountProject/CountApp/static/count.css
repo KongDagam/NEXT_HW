@@ -1,0 +1,32 @@
+
+*{
+  font-family: 'Gaegu', cursive;
+}
+body{
+  background-color: rgb(252, 175, 201);
+}
+textarea{border-radius: 4%;
+width: 400px;
+height: 300px;
+font-size: 20px;
+}
+
+h1{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted white;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 100px;
+  color: white;}
+  
+  form{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+    

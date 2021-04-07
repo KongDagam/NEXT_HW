@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <title>Result</title>
+</head>
+<body>
+    <div class="box">
+        <h1>입력한 텍스트: {{text}}</h1> <br> <br>
+        <div class="text_box">
+         <p>글자 수: {{total_len}}</p> <br>
+         <p>공백 제외 글자 수: {{no_blank_len}}</p> <br>
+         <p>단어 수: {{word}}</p>
+        </div>
+    </div>
+    
+</body>
+</html>
