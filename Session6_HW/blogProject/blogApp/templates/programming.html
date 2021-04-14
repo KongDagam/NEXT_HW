@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'programming.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  {% include './include/header.html' %}
+  <h2>Programming</h2>
+  <ol>
+    {% for article in articles %}
+    <li>
+      <a href="{% url 'detail' article.pk %}">{{article.title }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+  {% include './include/footer.html' %}
+</body>
+
+</html>

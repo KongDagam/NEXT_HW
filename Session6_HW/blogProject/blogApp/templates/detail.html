@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>detail</title>
+</head>
+
+<body>
+  {% include './include/header.html' %}
+  <!-- 각 카테고리로 이동 -->
+  <h2><a href="{% url article.category %}">{{article.category | title}}</a></h2> 
+  <table>
+    <!-- 한줄 -->
+    <tr>
+      <th>제목</th>
+      <td>{{article.title}}</td>
+    </tr>
+    <tr>
+      <th>내용</th>
+      <td><pre>{{article.content}}</pre></td>
+    </tr>
+    <tr>
+      <th>작성 시간</th>
+      <td>{{article.time|date:"Y-m-d f"}}</td>
+    </tr>
+  </table>
+  <br>
+  {% include './include/footer.html' %}
+  <!-- 가져오기 -->
+</body>
+
+</html>

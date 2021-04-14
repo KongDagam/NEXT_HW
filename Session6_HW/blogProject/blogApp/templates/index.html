@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+<body>
+  {% include './include/header.html' %}
+  <ul>
+    <li><a class="movie" href="{% url 'movie' %}">영화 (글 개수: {{movie_number}})</a></li>
+    <li><a class="drama" href="{% url 'drama' %}">드라마 (글 개수: {{drama_number}})</a></li>
+    <li><a class="programming" href="{% url 'programming' %}">프로그래밍 (글 개수: {{programming_number}})</a></li>
+  </ul>
+  {% include './include/footer.html' %}
+</body>
+</html>

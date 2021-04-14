@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>new</title>
+</head>
+
+<body>
+  {% include './include/header.html' %}
+  <form action="" method="post">
+    {% csrf_token %}
+    <table>
+      <tr>
+        <th>카테고리</th>
+        <td>
+          <select name="category">
+            <option value="movie">영화</option>
+            <option value="drama">드라마</option>
+            <option value="programming">프로그래밍</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td><input name="title" placeholder="제목을 입력하세요"></td>
+      </tr>
+      <tr>
+        <th>내용</th>
+        <td><textarea name="content" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea></td>
+      </tr>
+      <tr>
+        <th>저장</th>
+        <td><button type="submit">저장하기</button></td>
+      </tr>
+    </table>
+
+  </form>
+  {% include './include/footer.html' %}
+</body>
+
+</html>

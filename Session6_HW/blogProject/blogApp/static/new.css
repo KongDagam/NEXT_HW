@@ -1,0 +1,9 @@
+*{
+  background-color:rgb(7, 0, 2);
+  color: white;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
