@@ -25,7 +25,7 @@ def new(request):
             category = request.POST['category']
         )
         return redirect('detail', article_pk=new_article.pk)
-    
+        
     return render(request, 'new.html')
 
 def movie(request):
