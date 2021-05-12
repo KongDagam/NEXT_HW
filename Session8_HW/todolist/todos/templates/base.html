@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List 게시판</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <!-- <link href="{% static 'home.css' %}" rel="stylesheet"> -->
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+    <!-- <h1>To-Do-List Home</h1> -->
+    <h1>
+    {% block title %}
+    {% endblock title %}
+    <a class="base_a" href="{% url 'new' %}">글쓰러가기</a>
+    </h1>
+    <!-- <div class="div-table">
+      <table>
+          <thead>
+              <tr>
+                  <th>🧡To-Do-List🧡</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for todo in todos %}
+              <tr>
+                  <td><a href="{% url 'detail' todo.pk %}">✓ {{todo.title}} ({{todo.remain}}일 남았다!)</a></td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+    </div>
+    <div class="div-links">
+      <a href="{% url 'new' %}">글 쓰러가기</a>
+    </div> -->
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

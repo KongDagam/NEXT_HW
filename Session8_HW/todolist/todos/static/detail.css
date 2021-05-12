@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  background-color: #ffeef0;
+  color: rgb(71, 68, 69);
+}
+
+h1 {
+  font-family: 'Itim', cursive;
+  padding: 7px 20px 7px 20px;
+  background-color: rgba(248, 109, 128, 0.856);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+th, td{
+  padding-right: 20px;
+  padding-bottom: 15px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 30px;
+}
+
+.menu_a{
+  border-style:solid;
+  border-color: #575757;
+  background-color: #ffd9d9;
+  border-radius: 8%;
+}
+
+table{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  
+}
+
+.a-class{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 18px;
+}
+a{
+  margin-right: 15px;
+  
+  
+}
+
+.base_a{
+  color: white;
+  background-color: rgba(255, 130, 146, 0.918);
+  border: 0;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+}
+
+.title_a{
+  color: white;
+  background-color: rgba(255, 130, 146, 0.918);
+  border: 0;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}
+input{
+  width: 230px;
+  font-family: 'Gamja Flower', cursive;
+  margin-top: 65px;
+}
+
+button{
+  font-family: 'Gamja Flower', cursive;
+  margin-top: 65px;
+  margin-left: 8px;
+  background-color: #ffd9d9;
+}
+
+.delete_a{
+  font-size: 10px;
+  font-family: 'Gamja Flower', cursive;
+  margin-left: 13px;
+  border-style: dotted;
+  border-color: rgba(255, 130, 146, 0.918);
+  border-radius: 15%;
+  color: rgb(131, 122, 126)
+  
+}
+
+.ul{
+  display: flex;
+  justify-content: center;
+  
+}
+
+ul{
+  border-style: solid;
+  border-color: rgb(107, 105, 106);
+  width: 240px;
+  height:130px;
+  display: flex;
+  margin-top: 17px; 
+  flex-direction: column;
+  font-family: 'Gamja Flower', cursive;
+  padding-top: 7px;
+}
+
+ul{
+  list-style-type:circle;
+}
+
+
