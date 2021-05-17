@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  background-color: #ffeef0;
+  color: rgb(71, 68, 69);
+}
+
+p{
+  background-color: rgba(248, 109, 128);
+  font-family: 'Itim', cursive;
+  color: white;
+}
+h1 {
+  font-family: 'Gamja flower', cursive;
+  padding: 7px 20px 7px 20px;
+  background-color: rgba(248, 109, 128);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  
+}
+h3{
+  width: 320px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+ border-style: dashed;
+ border-color: #9b8c8d;
+ width: 300px;
+ display: flex;
+ flex-direction: column;
+ margin-top: 200px;
+ align-items: center;
+ padding: 15px 20px 15px 20px;
+}
+button{
+  margin-top: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 14px;
+}
+
+.base_a{
+  background-color: rgba(248, 109, 128);
+  color: white;
+  margin-left: 12px;
+}
+
+.nav-bar{
+  background-color:rgba(248, 109, 128);
+}
+
+a:hover {
+  text-decoration: underline; 
+}

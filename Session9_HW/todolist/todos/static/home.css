@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  background-color: #ffeef0;
+  color: rgb(71, 68, 69);
+}
+
+h1 {
+  font-family: 'Itim', cursive;
+  padding: 7px 20px 7px 20px;
+  background-color: rgba(248, 109, 128);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.div-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.div-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+th {
+  font-family: 'Itim', cursive;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.list_a{
+  color: rgb(104, 100, 101);
+}
+
+
+.div-links{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
+
+.base_a{
+  color: white;
+  background-color: rgba(248, 109, 128);
+  border: 0;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  margin-left: 15px;
+
+}
+
+.title_a{
+  color: white;
+  background-color: rgba(248, 109, 128);
+}
+
+.write_a{
+  border-style:solid;
+  border-color: #7a7676;
+  background-color: #ffdcdc;
+  border-radius: 13%;
+}
+
+.nav-item{
+  background-color: rgba(248, 109, 128);
+  color: white;
+  font-family: 'Itim', cursive;
+  }
+
+  .nav-items{
+    background-color: rgba(248, 109, 128);
+  }
+
+  .nav-item{
+    font-family: 'Gamja Flower', cursive;
+  }
+
+  .nav-bar{
+    background-color: rgba(248, 109, 128);
+  }
+
+  .delete_a{
+    border-color:rgba(248, 109, 128);
+  }
+ 
+  .author{
+    color:#f8b0b8
+  }
+ 
+  a:hover {
+    text-decoration: underline; 
+ }

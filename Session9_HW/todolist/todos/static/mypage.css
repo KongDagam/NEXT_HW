@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  background-color: #ffeef0;
+  color: rgb(71, 68, 69);
+}
+
+h1 {
+  font-family: 'Itim', cursive;
+  padding: 7px 20px 7px 20px;
+  background-color: rgba(248, 109, 128);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.div-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.list_a{
+  color: rgb(104, 100, 101);
+  font-size: 20px;
+}
+li{
+  color: rgb(104, 100, 101);
+  font-size: 20px;
+}
+
+
+.div-links{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
+
+.base_a{
+  color: white;
+  background-color: rgba(248, 109, 128);
+  border: 0;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  margin-left: 15px;
+
+}
+
+.title_a{
+  color: white;
+  background-color: rgba(248, 109, 128);
+}
+
+.write_a{
+  border-style:solid;
+  border-color: #7a7676;
+  background-color: #ffdcdc;
+  border-radius: 13%;
+}
+
+.nav-item{
+  background-color: rgba(248, 109, 128);
+  color: white;
+  font-family: 'Gamja Flower', cursive;
+  }
+
+  .nav-items{
+    background-color: rgba(248, 109, 128);
+  }
+
+  .nav-bar{
+    background-color: rgba(248, 109, 128);
+  }
+
+
+  p{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
+    color: rgb(104, 100, 101);
+    margin-top: 60px;
+  }
+
+  h3 {
+    font-family: 'Itim', cursive;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .my-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul{
+    list-style-type:circle;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    padding-left: 0px;
+  }
+
+  a:hover {
+    text-decoration: underline; 
+ }
