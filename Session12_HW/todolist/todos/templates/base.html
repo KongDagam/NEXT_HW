@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List 게시판</title>
+    {% load static %}
+    {% load socialaccount %}
+    {% providers_media_js %}
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link href="{% static 'base.css' %}" rel="stylesheet">
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+    <!-- <h1>To-Do-List Home</h1> -->
+    <h1>
+    {% block title %}
+    {% endblock title %}
+   
+
+    <a class="menu" href="javascript:;">Menu</a>
+        <div class="nav-items">
+            <div class="nav-bar">
+                    {% if user.is_authenticated %}
+                    <a class="nav-item">안녕하세요, {{ user.username }}님</a>
+                    <a class="base_a" href="{% url 'new' %}">글쓰러가기</a>
+                    <a class="nav-item" href="{% url 'mypage' %}">Mypage</a>
+                    <a class="nav-item" href="{% url 'logout' %}"
+                    onclick="document.getElementById('kakao-logout').src
+                        = 'https://accounts.kakao.com/logout?continue=https://accounts.kakao.com/weblogin/account'"
+                    >로그아웃</a>
+                    {% else %}
+                    <a class="nav-item" href="{% url 'login' %}">로그인</a>
+                    <a class="nav-item" href="{% provider_login_url 'kakao' %}">카카오로그인</a>
+                    <a class="nav-item" href="{% url 'signup' %}">회원가입</a>
+                    {% endif %}
+            </div>
+        </div>
+    </h1>
+    <iframe id="kakao-logout" style="display: none;"></iframe>
+    {% block content %}
+    {% endblock content %}
+
+    <script type="text/javascript">
+        let navlist = document.querySelector(".nav-bar");
+        let menu = document.querySelector(".menu");
+        navlist.classList.add("hidden");
+    
+        menu.addEventListener("click", () => {
+          if (menu.textContent == "Menu") {
+            navlist.classList.remove("hidden");
+            menu.textContent = "접기";
+          }
+          else {
+            navlist.classList.add("hidden");
+            menu.textContent = "Menu";
+          };
+        })
+      </script>
+</body>
+</html>

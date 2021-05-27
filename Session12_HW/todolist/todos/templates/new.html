@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+<link href="{% static 'new.css' %}" rel="stylesheet">
+{% endblock css %}
+
+{% block title %}
+<a class="title_a" href="{% url 'home' %}">To-Do-List Create</a>
+{% endblock title %}
+
+{% block content %}
+<form action="" method="post">
+    {%	csrf_token %}
+    <table>
+        <tbody>
+            <tr>
+                <th>할일</th>
+                <td><input type="text" name="title" placeholder="제목을 입력해주세요."></td>
+            </tr>
+            <tr>
+                <th>세부사항</th>
+                <td> <textarea id="txt" cols="30" rows="10" onkeyup="counter()" placeholder="내용을 입력해주세요."></textarea></td>
+                <td><div class="counter">공백포함<span id="counting">0</span>자</div></td>
+            </tr>
+            <tr>
+                <th>마감일</th>
+                <td><input type="date" name="deadline"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-class">
+        <button type="submit">작성하기</button>
+    </div>
+    
+</form>
+
+<script type="text/javascript"> 
+
+    function counter(){
+            document.getElementById("counting").innerHTML = document.getElementById("txt").value.length;         
+        }
+</script>
+{% endblock content %}

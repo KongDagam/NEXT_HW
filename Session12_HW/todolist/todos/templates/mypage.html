@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+<link href="{% static 'mypage.css' %}" rel="stylesheet">
+{% endblock css %}
+
+{% block title %}
+<a class="title_a" href="{% url 'home' %}">To-Do-List Home</a>
+{% endblock title %}
+
+{% block content %}
+<h3><strong>🧡My Page🧡</strong></h3>
+<div class="my-items">
+ <p>My Post</p>
+   <ul>
+     {% for todo in todos %}
+     <li>
+        <a class="list_a" href="{% url 'detail' todo.pk %}">{{todo.title}} ({{todo.remain}}일 남았다!)</a>
+     </li>
+     {% endfor %}
+   </ul>
+  {% block comments %}
+  <p>My Comment</p>
+  {% endblock comments %}
+   <ul>
+     {% for comment in myc %}
+     <li>
+       {{comment.content}}
+     </li>
+     {% endfor %}
+   </ul>
+ </div>
+ <div class="div-links">
+    <a class="write_a" href="{% url 'new' %}">글 쓰러가기</a>
+ </div>
+ {% endblock content %}

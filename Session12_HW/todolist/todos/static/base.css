@@ -1,0 +1,36 @@
+.base_a {
+  flex-grow: 1;
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.nav-bar {
+  font-size: 0;
+  background-color: rgba(255, 130, 146);
+}
+  
+
+.nav-item {
+  font-size: 24px;
+  color: white;
+  margin-right:12px;
+  background-color: rgba(248, 109, 128);
+  font-family: 'Gamja Flower', cursive;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+.nav-bar.hidden{
+ display: none;
+}
+
+.menu{
+  margin-left: 15px;
+  background-color: rgba(248, 109, 128);
+  color: white;
+  font-family: 'Gamja Flower', cursive;
+  padding-right: 10px;
+}
+
