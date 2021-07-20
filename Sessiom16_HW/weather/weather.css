@@ -1,0 +1,52 @@
+h2{
+  color: rgb(114, 163, 216);
+  display: flex;
+  justify-content: center;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  margin-right: 5px;
+  width: 200px;
+}
+
+button{
+  background-color: rgb(112, 151, 224);
+  color: white;
+  border-color: rgb(112, 151, 224);
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  margin-top: 20px;
+  text-align: center; 
+  font-size: 18px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 200px;
+  height: 150px;
+  margin-bottom: 15px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
